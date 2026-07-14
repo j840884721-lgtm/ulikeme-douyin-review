@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="UlikeME 小红书笔记投放主题与卖点复盘" />
+    <title>UlikeME 小红书笔记投放复盘</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-mark">U</div>
+      <div>
+        <h1>UlikeME小红书笔记投放复盘</h1>
+        <p>图文 / 视频 · 主题与卖点效率 · 全量146篇</p>
+      </div>
+      <div class="snapshot">数据快照 2026-07-14</div>
+    </header>
+
+    <nav class="tabs" aria-label="报告视图">
+      <button class="tab active" data-view="overview">复盘总览</button>
+      <button class="tab" data-view="themes">主题 → 笔记</button>
+      <button class="tab" data-view="points">卖点 → 笔记</button>
+      <button class="tab" data-view="notes">单篇笔记</button>
+      <button class="tab" data-view="audit">链接审计</button>
+      <button class="tab" data-view="docs">说明文档</button>
+    </nav>
+
+    <main id="app">
+      <div class="loading">正在读取分析数据...</div>
+    </main>
+
+    <template id="empty-template">
+      <div class="empty">没有符合当前条件的笔记</div>
+    </template>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
